@@ -1,0 +1,17 @@
+﻿<Window x:Class="Akimbo_Patcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Akimbo_Patcher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="425" Width="600" MinWidth="600" MinHeight="425">
+    <Grid Background="#FF3C3C3C">
+        <Rectangle Fill="#FF212121" Margin="10,39,10,45" Stroke="Black"/>
+        <Button x:Name="AboutButton" Click="AboutButton_Click" Content="About" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Button x:Name="LoadButton" Click="LoadButton_Click" Content="Load SEAnims" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="104" Height="24"/>
+        <ComboBox x:Name="ArmTypes" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="46,0,0,10" Width="120" Height="26" VerticalAlignment="Bottom"/>
+        <Label x:Name="label" Content="Arm" HorizontalAlignment="Left" Margin="10,0,0,10" Foreground="White" Height="26" VerticalAlignment="Bottom" Width="36"/>
+        <Label x:Name="DropBox" Content="Drop Anims to Patch" Drop="DropBox_Drop" AllowDrop="True"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,39,10,45" FontSize="36" Foreground="White"/>
+    </Grid>
+</Window>
