@@ -1,0 +1,36 @@
+global proc RenameLeft()
+{   
+    if(`objExists tag_weapon`)
+    {
+        rename("tag_weapon", "tag_weapon_le");
+    }
+    else if(`objExists j_gun`)
+    {
+        rename("j_gun", "tag_weapon_le");
+    }
+    else
+    {
+        error "No weapon joint found, ensure tag_weapon or j_gun exists in the scene";
+        return;
+    }
+    
+    string $bones[] = `listRelatives -allDescendents "tag_weapon_le"`;
+    
+    for($bone in $bones)
+    {
+        if($bone == "tag_flash")
+        {
+            rename($bone, "tag_flash_le");
+        }
+        else if($bone == "tag_brass")
+        {
+            rename($bone, "tag_brass_le");
+        }
+        else
+        {
+            rename($bone, $bone + "1");
+        }
+    }
+}
+
+RenameLeft();
