@@ -36,6 +36,12 @@ arm's animations simply import/blend the other animation.
 5. Export "tag_torso/tag_cambone" and hierarchy as normal. For ADS anims, import any right arm animation
 and export "tag_view/tag_torso".
 
+# License/Disclaimer
+
+IWAkimboPatcher is license under the General Public License 3.0, it comes with NO warranty and I hold no liability for damages.
+
+It was made as a quick app to fix animations for me, it was build to suit my needs, if you don't know how to use it or can't get it to work, don't ask me.
+
 # Donate
 
 If you use this tool in any of your projects, it would be appreciated if you credit me.
